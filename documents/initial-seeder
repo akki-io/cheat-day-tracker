@@ -1,0 +1,7 @@
+mutation MyMutation {
+	history1: createHistory(input: {date: "2021-03-06", description: "Pumpkin Pie and Whip Cream", image_url: "https://cdn.akki.ca/pumpkin-pie-whip-cream.jpg", type: "CHEAT"}) {id},
+	history2: createHistory(input: {date: "2021-03-03", description: "Taco's and Quesadilla", image_url: "https://cdn.akki.ca/taco-quesadilla.jpg", type: "CHEAT"}) {id},
+	history3: createHistory(input: {date: "2021-02-26", description: "Tiramisu Cheesecake Slice", image_url: "https://cdn.akki.ca/tiramisu-cheesecake.jpg", type: "CHEAT"}) {id},
+	history4: createHistory(input: {date: "2021-02-25", description: "Churros + Dip", image_url: "https://cdn.akki.ca/churros.jpg", type: "CHEAT"}) {id},
+	history5: createHistory(input: {date: "2021-02-22", description: "Banana Chocolate Chunk Muffin", image_url: "https://cdn.akki.ca/banana-chocolate-chip-muffins.jpg", type: "CHEAT"}) {id}
+}

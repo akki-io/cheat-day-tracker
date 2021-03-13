@@ -4,6 +4,7 @@ import { applyPolyfills, defineCustomElements } from '@aws-amplify/ui-components
 import App from './App.vue';
 // eslint-disable-next-line camelcase
 import aws_exports from './aws-exports';
+import './assets/index.css';
 
 Amplify.configure(aws_exports);
 applyPolyfills().then(() => {
