@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div v-for="item in items" :key="item.id">
+      <h3>{{ item.date }}</h3>
+      <p>{{ item.description }}</p>
+      <h3>{{ item.image_url }}</h3>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { API } from 'aws-amplify';
+import { historyByDate } from './graphql/queries';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  async created() {
+    await this.getItems();
+  },
+  data() {
+    return {
+      items: [],
+    };
+  },
+  methods: {
+    async getItems() {
+      const items = await API.graphql({
+        query: historyByDate,
+        variables: {
+          type: 'CHEAT',
+          sortDirection: 'DESC',
+        },
+      });
+      this.items = items.data.historyByDate.items;
+    },
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

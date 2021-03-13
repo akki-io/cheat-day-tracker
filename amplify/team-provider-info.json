@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cheatdaytracker-dev-154642-authRole",
+      "UnauthRoleArn": "arn:aws:iam::163011916086:role/amplify-cheatdaytracker-dev-154642-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::163011916086:role/amplify-cheatdaytracker-dev-154642-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cheatdaytracker-dev-154642-deployment",
+      "UnauthRoleName": "amplify-cheatdaytracker-dev-154642-unauthRole",
+      "StackName": "amplify-cheatdaytracker-dev-154642",
+      "StackId": "arn:aws:cloudformation:us-east-1:163011916086:stack/amplify-cheatdaytracker-dev-154642/3ac45930-843d-11eb-be42-12eba9bf230b",
+      "AmplifyAppId": "dknpa57ndain1"
+    }
+  }
+}

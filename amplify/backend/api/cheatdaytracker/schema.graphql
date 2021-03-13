@@ -1,0 +1,9 @@
+type History @model
+  @key(name: "historyByDate", fields: ["type", "date"], queryField: "historyByDate")
+{
+  id: ID!
+  type: String!
+  date: AWSDate!
+  description: String!
+  image_url: String!
+}

@@ -1,4 +1,4 @@
-# last-cheat-day
+# cheat-day-tracker
 
 ## Project setup
 ```
