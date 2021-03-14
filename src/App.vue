@@ -66,6 +66,7 @@ export default {
       });
       this.items = items.data.historyByDate.items;
       this.dateSince = new Date(Date.parse(this.items[0].date));
+      this.dateSince.setDate(this.dateSince.getDate() + 1);
       this.loading = false;
     },
   },
