@@ -1,9 +1,9 @@
 version: 1
-#backend:
-#  phases:
-#    build:
-#      commands:
-#        - amplifyPush --simple
+backend:
+  phases:
+    build:
+      commands:
+        - amplifyPush --simple
 frontend:
   phases:
     preBuild:
