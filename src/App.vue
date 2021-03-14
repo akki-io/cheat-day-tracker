@@ -20,7 +20,7 @@
                   </p>
                   <p class="text-base text-indigo-400">
                     Secretly enjoyed this meal on
-                    <time datetime="2020-01-07">January 7, 2020</time>
+                    <time>{{ item.date | moment('dddd, MMMM Do YYYY') }}</time>
                   </p>
                 </div>
               </div>
